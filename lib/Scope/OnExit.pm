@@ -1,52 +1,45 @@
 package Scope::OnExit;
 
-use warnings;
 use strict;
+use warnings;
+use base qw/Exporter DynaLoader/;
+
+our $VERSION = '0.01';
+
+bootstrap Scope::OnExit $VERSION;
+
+##no critic ProhibitAutomaticExportation
+our @EXPORT = qw/on_scope_exit/;
+
+1;    # End of Scope::OnExit
+
+__END__
 
 =head1 NAME
 
-Scope::OnExit - The great new Scope::OnExit!
+Scope::OnExit - Running code on scope exit
 
 =head1 VERSION
 
 Version 0.01
 
-=cut
-
-our $VERSION = '0.01';
-
-
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
-
-Perhaps a little code snippet.
+Execute code on scope exit
 
     use Scope::OnExit;
 
-    my $foo = Scope::OnExit->new();
-    ...
-
-=head1 EXPORT
-
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
+	{
+	my $var = foo();
+	on_scope_exit { do_something($var) };
+	something_else();
+	} # scope exit, do_something($var) is run now.
 
 =head1 FUNCTIONS
 
-=head2 function1
+=head2 on_scope_exit { block }
 
-=cut
-
-sub function1 {
-}
-
-=head2 function2
-
-=cut
-
-sub function2 {
-}
+This will make the block run at scope exit. 
 
 =head1 AUTHOR
 
@@ -57,8 +50,6 @@ Leon Timmermans, C<< <leont at cpan.org> >>
 Please report any bugs or feature requests to C<bug-scope-onexit at rt.cpan.org>, or through
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Scope-OnExit>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
-
-
 
 
 =head1 SUPPORT
@@ -103,5 +94,3 @@ under the same terms as Perl itself.
 
 
 =cut
-
-1; # End of Scope::OnExit
