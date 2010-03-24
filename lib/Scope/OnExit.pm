@@ -58,7 +58,6 @@ You can find documentation for this module with the perldoc command.
 
     perldoc Scope::OnExit
 
-
 You can also look for information at:
 
 =over 4
@@ -81,20 +80,11 @@ L<http://search.cpan.org/dist/Scope-OnExit>
 
 =back
 
-
 =head1 COPYRIGHT & LICENSE
 
 Copyright 2009 Leon Timmermans, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
-
-=head1 SEE ALSO
-
-=over 4
-
-=item * L<B::Hooks::EndOfScope> implements something similar in a rather different way.
-
-=back
 
 =cut
