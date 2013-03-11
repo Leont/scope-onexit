@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use base qw/Exporter DynaLoader/;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 bootstrap Scope::OnExit $VERSION;
 
@@ -21,7 +21,7 @@ Scope::OnExit - Running code on scope exit
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =head1 SYNOPSIS
 

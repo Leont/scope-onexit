@@ -4,7 +4,6 @@ lib/Scope/OnExit.pm
 lib/Scope/OnExit.xs
 LICENSE
 MANIFEST
-lib/Scope/ppport.h
 README
 t/00-load.t
 t/10-basics.t
