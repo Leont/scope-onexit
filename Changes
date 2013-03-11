@@ -1,10 +1,9 @@
 Revision history for Scope-OnExit
 
-<<<<<<< HEAD
-=======
-        Modernize Exporter and loader code
+{{$NEXT}}
+        - Upgrade to Dist::Zilla
+        - Modernize Exporter and loader code
 
->>>>>>> f152529... f1
 0.02    2010-03-24
         Documentation updates
 
