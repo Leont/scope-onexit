@@ -2,11 +2,13 @@ package Scope::OnExit;
 
 use strict;
 use warnings;
-use base qw/Exporter DynaLoader/;
+use base qw(Exporter);
+
+use XSLoader;
 
 our $VERSION = '0.01';
 
-bootstrap Scope::OnExit $VERSION;
+XSLoader::load(__PACKAGE__, $VERSION);
 
 ##no critic ProhibitAutomaticExportation
 our @EXPORT = qw/on_scope_exit/;

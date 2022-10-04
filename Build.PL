@@ -17,6 +17,7 @@ my $builder = Module::Build->new(
     },
     requires            => {
         perl            => 5.006000,
+        'XSLoader'      => 0,
     },
     meta_merge => {
         resources       => {
