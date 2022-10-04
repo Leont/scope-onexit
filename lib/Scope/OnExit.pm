@@ -66,19 +66,11 @@ You can also look for information at:
 
 =item * RT: CPAN's request tracker
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Scope-OnExit>
+L<https://rt.cpan.org/NoAuth/Bugs.html?Dist=Scope-OnExit>
 
-=item * AnnoCPAN: Annotated CPAN documentation
+=item * MetaCPAN
 
-L<http://annocpan.org/dist/Scope-OnExit>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Scope-OnExit>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Scope-OnExit>
+L<https://metacpan.org/pod/Scope::OnExit>
 
 =back
 
