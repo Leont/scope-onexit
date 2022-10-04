@@ -29,11 +29,11 @@ Execute code on scope exit
 
     use Scope::OnExit;
 
-	{
-	my $var = foo();
-	on_scope_exit { do_something($var) };
-	something_else();
-	} # scope exit, do_something($var) is run now.
+    {
+        my $var = foo();
+        on_scope_exit { do_something($var) };
+        something_else();
+    } # scope exit, do_something($var) is run now.
 
 =head1 FUNCTIONS
 
