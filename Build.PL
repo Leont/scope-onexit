@@ -26,7 +26,6 @@ my $builder = Module::Build->new(
         keywords        => [ 'scope', 'end' ],
     },
     add_to_cleanup      => [ 'Scope-OnExit-*' ],
-    create_makefile_pl  => 'passthrough',
     sign                => 1,
 );
 
