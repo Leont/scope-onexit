@@ -26,7 +26,7 @@ Execute code on scope exit
 	something_else();
 	} # scope exit, do_something($var) is run now.
 
-Note that Scope::Cleanup provides a technologically superior way to do this. Scope::OnExit takes some shortcuts with subtle edge-cases. Unless someone provides a good reason otherwise this module will soon become a thin wrapper for Scope::Cleanup, and will eventually be removed from CPAN entirely.
+Note that Feature::Compat::Defer provides a much better way to do this. Unless you need compatibility with perls older than 5.14, I highly recommend using that instead.
 
 =func on_scope_exit { block }
 
