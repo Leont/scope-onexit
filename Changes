@@ -1,6 +1,8 @@
 Revision history for Scope-OnExit
 
 {{$NEXT}}
+
+0.03      2022-11-05 22:10:40+01:00 Europe/Amsterdam
         - Upgrade to Dist::Zilla
         - Modernize Exporter and loader code
 
